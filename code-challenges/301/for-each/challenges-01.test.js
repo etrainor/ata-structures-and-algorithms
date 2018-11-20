@@ -32,9 +32,9 @@ const addValues = (arr, value) => {
 
 const addNumbers = (num, arr, times, callback) => {
   for (let i = 0 ; i < times ; i++){
-    callback(addValues);
-    return arr;
+    callback(arr,num);
   }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,14 +46,14 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const removeOne = (num, arr) => {
-  if(num/3 === 2){
+  if(num % 3 === 2){
     arr.pop();
   }
 };
 
 const removeElements = (arr, callback) => {
   for (let i = 0 ; i < arr.length ; i++){
-    callback(removeOne);
+    callback(arr[i], arr);
   }
   return arr;
 };
@@ -64,9 +64,11 @@ Write a function named removeWithForEach that produces the same output as challe
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithForEach = (arr, callback) => {
-  arr.forEach(callback(removeOne));
+  arr.forEach((value) => {
+    callback(value, arr);
+  });
   return arr;
-}
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -76,8 +78,13 @@ This anonymous function should accept up to three arguments: the element, the in
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithAnon = (arr) => {
-  // Solution code here...
-}
+  arr.forEach((value) => {
+    if(value % 3 === 2){
+      arr.pop();
+    }  
+  });
+  return arr;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -94,8 +101,14 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
-}
+  let newList = [];
+  availableItems.forEach((value)=> {
+    if(value.available === true) {
+      newList.push(value.name);
+    }
+  });
+  return newList;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7
@@ -109,9 +122,23 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
-}
-
+  const output = [];
+  arr.forEach(num => {
+    if(num % 3 === 0 && num % 5 === 0){
+      output.push('Fizz Buzz')
+    }
+    else if(num % 3 === 0){
+      output.push('Fizz');
+    }
+    else if(num % 5 === 0){
+      output.push('Buzz');
+    }
+    else {
+      output.push(num);
+    }
+  });
+  return output;
+};
 /* ------------------------------------------------------------------------------------------------
 TESTS
 All the code below will verify that your functions are working to solve the challenges.
