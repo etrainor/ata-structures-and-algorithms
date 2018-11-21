@@ -85,7 +85,7 @@ const removeWithAnon = (arr) => {
   });
   return arr;
 };
-
+ 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 Write a function named createList that takes in an array of the current store intentory.
