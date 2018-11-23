@@ -63,7 +63,10 @@ console.log(people[1].isAuthor) prints true
 ------------------------------------------------------------------------------------------------ */
 
 const setStatusAsAuthor = (people) => {
-  // Solution code here...
+  // Found help on Stack Overflow - https://stackoverflow.com/questions/38922998/add-property-to-an-array-of-objects
+  people.forEach(function(element){
+    element.isAuthor = true;
+  })
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,7 +85,7 @@ console.log(a) prints [1, 2, 3, 4]
 ------------------------------------------------------------------------------------------------ */
 
 const append = (arr1, arr2) => {
-  // Solution code here...
+  append(arr1, arr2);
 
 }
 
