@@ -27,7 +27,7 @@ console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
 
 const appendFirstToLast = (arr) => {
-  // Solution code here...
+  arr.push(arr[0]);
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -98,7 +98,7 @@ Run your tests from the console: jest challenges-02.test.js
 ------------------------------------------------------------------------------------------------ */
 
 describe('Testing challenge 1', () => {
-  test('It should append without modifying the oiginal', () => {
+  test('It should append without modifying the original', () => {
     const a = 'This is my story.';
     const b = appendTheEnd(a);
 
@@ -108,7 +108,7 @@ describe('Testing challenge 1', () => {
 });
 
 describe('Testing challenge 2', () => {
-  test('It should append by modifying the oiginal', () => {
+  test('It should append by modifying the original', () => {
     const a = ['Yes', 'it', 'is'];
     appendFirstToLast(a);
 
