@@ -85,8 +85,8 @@ console.log(a) prints [1, 2, 3, 4]
 ------------------------------------------------------------------------------------------------ */
 
 const append = (arr1, arr2) => {
-  append(arr1, arr2);
-
+  // Found the solution here - https://davidwalsh.name/merge-arrays-javascript
+  Array.prototype.push.apply(arr1, arr2);
 }
 
 /* ------------------------------------------------------------------------------------------------
