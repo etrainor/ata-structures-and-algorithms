@@ -14,6 +14,7 @@ For example:
 
 const isNum = (input) => {
   let a = /\d/;
+  return input;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -25,7 +26,10 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  // Solution code here...
+  //found part of this here - https://stackoverflow.com/questions/5283071/regex-exec-only-returning-first-match
+  let regex = /[A-Z]+\w+/g;
+  let result = str.match(regex);
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -125,7 +129,7 @@ describe('Testing challenge 1', () => {
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should only return words that begin with a capital letter', () => {
     const capitalResult = isCapitalized('We only want to Return the Words that begin With a capital Letter');
 
