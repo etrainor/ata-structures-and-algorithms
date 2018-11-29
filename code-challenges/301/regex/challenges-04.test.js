@@ -37,9 +37,16 @@ CHALLENGE 3
 
 Write a function named citiesAtoJ that takes in an array of city names and uses a regular expression pattern to return a new array containing any cities that begin with the letters A through J, inclusive.
 ------------------------------------------------------------------------------------------------ */
-
+//This returns the correct cities in replt and code pen (when you remove the let from line 43) but will not pass test in VS Code... TODO - ASK!!
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  let regex = /[A-J]\w+\s?/gy;
+  let newArray = [];
+  for(let i = 0 ; i < arr.length ; i++){
+    if ((arr[i].match(regex))!== null){
+      newArray.push(arr[i]);
+    }
+  }
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
