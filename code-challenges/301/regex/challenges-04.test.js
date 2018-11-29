@@ -62,9 +62,11 @@ Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
 const matchMonth = (input) => {
-  // oct case insensitive
-  let regex = /[oct]\w+/gi;
+  let regex = /^[Oo](ct)(ober)*$/;
   return regex.test(input);
+  if (typeof input === 'undefined')return false;
+  if (Number.isInteger(input)) return false;
+  if (input.match(regex)) return true;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -78,7 +80,14 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 ------------------------------------------------------------------------------------------------ */
 
 const noPunctuation = str => {
-  // Solution code here...
+  let regex = /[^\s\W][a-zA-Z]*\s/g;
+  let result = str.match(regex);
+  // let newArray = [];
+  // for (var i = 0 ; i < result.lenth ; i++){
+  //   if(result[i] !== " ") {
+  //     newArray.push(result);
+  //   }
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -178,7 +187,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia vel massa sed egestas. Nunc faucibus iaculis elit, a scelerisque enim condimentum sed. Aenean ac scelerisque sem, et pharetra diam.';
 
   test('It should only return words that are immediately followed by a space', () => {
