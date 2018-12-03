@@ -174,7 +174,12 @@ Write a function named totalSumCSV that, given a string of comma-separated value
 
 const totalSumCSV = (str) => {
   let total = 0;
-  // Solution code here...
+  let tempArray = [];
+  tempArray = str.split(',');
+
+  for(var i = 0 ; i < tempArray.length ; i++){
+    total += parseInt(tempArray[i], 10);
+  }
   return total;
 };
 
@@ -283,7 +288,7 @@ describe('Testing challenge 7', () => {
   });
 });
 
-xdescribe('Testing challenge 8', () => {
+describe('Testing challenge 8', () => {
   test('It should add up the numbers contained within the string', () => {
     expect(totalSumCSV('1,4,5,7,2')).toStrictEqual(19);
     expect(totalSumCSV('147')).toStrictEqual(147);
