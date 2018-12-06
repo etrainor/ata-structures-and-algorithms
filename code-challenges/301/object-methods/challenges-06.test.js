@@ -12,7 +12,7 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
   finalExam: true };
 
 const getCourseKeys = (obj) => {
-  // Solution code here...
+  return Object.keys(obj);
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -68,7 +68,7 @@ let characters = [
 ]
 
 const totalCharacters = (arr) => {
-  // Solution code here...
+  return arr.length;
 }
 
 /*------------------------------------------------------------------------------------------------
@@ -79,7 +79,9 @@ Write a function named getHouses that returns a new array containing the names o
 
 const getHouses = (arr) => {
   let houses = [];
-  // Solution code here...
+  for(let i = 0 ; i < arr.length ; i++){
+  houses.push(arr[i].house);
+  }
   return houses;
 }
 
@@ -96,8 +98,18 @@ hasChildrenValues(characters, 'Eddard') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
-}
+  let hasChildren = [];
+  for(let i = 0 ; i < arr.length ; i++) {
+    if (character === arr[i].name){
+      hasChildren.push(Object.values(arr[i].children))
+    }
+  }
+  if(hasChildren[0].length < 1){
+    return false;
+  }else{
+    return true;
+  }
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -108,7 +120,17 @@ The input and output of this function are the same as the input and output from 
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenEntries = (arr, character) => {
-  // Solution code here...
+  let hasChildren = [];
+  for(let i = 0 ; i < arr.length ; i++) {
+    if (character === arr[i].name){
+      hasChildren.push(Object.entries(arr[i].children))
+    }
+  }
+  if(hasChildren[0].length < 1){
+    return false;
+  }else{
+    return true;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------
