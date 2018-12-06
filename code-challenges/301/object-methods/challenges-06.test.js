@@ -98,8 +98,18 @@ hasChildrenValues(characters, 'Eddard') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
-}
+  let hasChildren = [];
+  for(let i = 0 ; i < arr.length ; i++) {
+    if (character === arr[i].name){
+      hasChildren.push(Object.values(arr[i].children))
+    }
+  }
+  if(hasChildren[0].length < 1){
+    return false;
+  }else{
+    return true;
+  }
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -110,7 +120,17 @@ The input and output of this function are the same as the input and output from 
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenEntries = (arr, character) => {
-  // Solution code here...
+  let hasChildren = [];
+  for(let i = 0 ; i < arr.length ; i++) {
+    if (character === arr[i].name){
+      hasChildren.push(Object.entries(arr[i].children))
+    }
+  }
+  if(hasChildren[0].length < 1){
+    return false;
+  }else{
+    return true;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -183,7 +203,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return true for characters that have children', () => {
     expect(hasChildrenValues(characters, 'Daenarys')).toBeTruthy();
   });
@@ -193,7 +213,7 @@ xdescribe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should return true for characters that have children', () => {
     expect(hasChildrenEntries(characters, 'Eddard')).toBeTruthy();
   });
