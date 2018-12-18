@@ -142,7 +142,18 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
-  // Solution code here...
+  let hasKids = [];
+  for(let i = 0 ; i < 5 ; i++){
+    hasKids.push(characters[i].children.length);
+  }
+
+  let numKids = hasKids.reduce( function(accumulator,value,idx) {
+    accumulator = accumulator + value;
+    return accumulator;
+  }, 0);
+
+  return numKids;
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -264,7 +275,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return the total number of children', () => {
     expect(countNumberOfChildren(characters)).toStrictEqual(14);
   });
