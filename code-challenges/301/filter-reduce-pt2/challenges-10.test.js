@@ -36,7 +36,7 @@ return input.reduce( (accumulator, array) => {
     return innerAccumulator;
   }, 0);
 
-  console.log(innerResult, 'inner result')
+  // console.log(innerResult, 'inner result')
 
   accumulator = accumulator + innerResult;
   return accumulator;
@@ -57,7 +57,11 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 ------------------------------------------------------------------------------------------------ */
 
 const totalSum = (input) => {
-  // Solution code here...
+  // concatenate array of arrays into one array
+  let newArray = input.reduce((acc, val) => acc.concat(val));
+  // adds the values of the array together
+  let result = newArray.reduce((total, num) => total + num)
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -175,7 +179,7 @@ describe('Testing challenge 1', () => {
   })
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should add all the numbers in the arrays', () => {
     const nums = [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]];
 
