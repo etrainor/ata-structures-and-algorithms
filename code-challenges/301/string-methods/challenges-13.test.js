@@ -113,7 +113,15 @@ Write a function named findEvery that takes in an array of strings, along with a
 ------------------------------------------------------------------------------------------------ */
 
 const findEvery = (arr, target) => {
-  // Solution code here...
+  let results = [];
+  for (var i in arr){
+    results.push(arr[i].includes(target))
+  }
+  if(results.includes(false)) {
+    return false;
+  }else {
+    return true;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -240,15 +248,15 @@ describe('Testing challenge 6', () => {
   });
 });
 
-// describe('Testing challenge 7', () => {
-//   test('It should determine whether all the strings contain a given string', () => {
-//     const words = ['things', 'apple pie (:)', ':)banana pie', 'missing that thing', 'cant:)aloupe is tasty'];
+describe('Testing challenge 7', () => {
+  test('It should determine whether all the strings contain a given string', () => {
+    const words = ['things', 'apple pie (:)', ':)banana pie', 'missing that thing', 'cant:)aloupe is tasty'];
 
-//     expect(findEvery(words, 'a')).toStrictEqual(false);
-//     expect(findEvery(words, '')).toStrictEqual(true);
-//     expect(findEvery(words, 'i')).toStrictEqual(true);
-//   });
-// });
+    expect(findEvery(words, 'a')).toStrictEqual(false);
+    expect(findEvery(words, '')).toStrictEqual(true);
+    expect(findEvery(words, 'i')).toStrictEqual(true);
+  });
+});
 
 // describe('Testing challenge 8', () => {
 //   test('It should remove Brook from all courses', () => {
