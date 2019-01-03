@@ -43,9 +43,14 @@ For example, (123) 456-7890 returns 1234567890
 ------------------------------------------------------------------------------------------------ */
 
 const standardizePhoneNumbers = (arr) => {
-  // Solution code here...
+  let firstResults = [];
+  let results = [];
+  for (var i in arr){
+    firstResults.push(arr[i].replace(' ', ''));
+    results.push(firstResults[i].substring(1,4) + firstResults[i].substring(5,8) + firstResults[i].substring(9,14));
+  }
+  return(results);
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -175,14 +180,14 @@ describe('Testing challenge 2', () => {
   });
 });
 
-// describe('Testing challenge 3', () => {
-//   test('It should return a standardized set of phone numbers', () => {
-//     const nums = ['(123) 456-7890', '(222) 222-2222'];
+describe('Testing challenge 3', () => {
+  test('It should return a standardized set of phone numbers', () => {
+    const nums = ['(123) 456-7890', '(222) 222-2222'];
 
-//     expect(standardizePhoneNumbers(nums)).toStrictEqual(['1234567890', '2222222222']);
-//     expect(standardizePhoneNumbers([nums[0]])).toStrictEqual(['1234567890']);
-//   });
-// });
+    expect(standardizePhoneNumbers(nums)).toStrictEqual(['1234567890', '2222222222']);
+    expect(standardizePhoneNumbers([nums[0]])).toStrictEqual(['1234567890']);
+  });
+});
 
 // describe('Testing challenge 4', () => {
 //   test('It should only return the odd indexed characters from the string', () => {
