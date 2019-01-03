@@ -97,7 +97,13 @@ Write a function named findAnything that takes in an array of strings, along wit
 ------------------------------------------------------------------------------------------------ */
 
 const findAnything = (arr, target) => {
-  // Solution code here...
+  let results = [];
+  for (var i in arr){
+    if (arr[i].includes(target) === true) {
+      results.push(arr[i])
+    }
+  }
+  return(results);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -225,14 +231,14 @@ describe('Testing challenge 5', () => {
   });
 });
 
-// describe('Testing challenge 6', () => {
-//   test('It should find all the strings that contain a given string', () => {
-//     const words = ['things', 'apple (:)', ':)banana', 'missing that thing', 'cant:)aloupe'];
+describe('Testing challenge 6', () => {
+  test('It should find all the strings that contain a given string', () => {
+    const words = ['things', 'apple (:)', ':)banana', 'missing that thing', 'cant:)aloupe'];
 
-//     expect(findAnything(words, ':)')).toStrictEqual(findHappiness(words));
-//     expect(findAnything(words, 'i')).toStrictEqual(['things', 'missing that thing']);
-//   });
-// });
+    expect(findAnything(words, ':)')).toStrictEqual(findHappiness(words));
+    expect(findAnything(words, 'i')).toStrictEqual(['things', 'missing that thing']);
+  });
+});
 
 // describe('Testing challenge 7', () => {
 //   test('It should determine whether all the strings contain a given string', () => {
