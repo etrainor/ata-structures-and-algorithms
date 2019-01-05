@@ -41,21 +41,12 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  let hourlySales = [];
-  let results = [];
-  for(var i = 0; i < hoursOpen.length; i++){
-    hourlySales.push(firstPike[i] + seaTac[i] + seattleCenter[i] + capHill[i] + alkiBeach[i]);
-  }
-  hourlySales.forEach(function(element){
-    let salesObj={};
-    salesObj.sales = element + ' cookies';
-    salesObj.time = hoursOpen[i];
-    results.push(salesObj);
-    console.log(element);
-  });
-  return results;
+  //can't figure out how to do this using forEach
+  //referenced H'Liana's code.
+  let hourlyObjects = [];
+  for (let i in data) hourlyObjects.push({sales: data[i] + ' cookies', time: hours[i]});
+  return hourlyObjects;
 };
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -76,8 +67,18 @@ const errands = [
 ]
 
 const howManyTreats = (arr) => {
-  // Solution code here...
-}
+  // return arr[2].items[1].quantity; //This works but does not use assigned methods
+
+  for(var i = 0 ; i < arr.length ; i++){
+    if(arr[i].store.includes('Pet')) {
+      for (var j = 0 ; j < arr[i].items.length ; j++){
+        if(arr[i].items[j].name === 'Treats'){
+          return arr[i].items[j].quantity;
+        }
+      }
+    }
+  }
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -98,8 +99,31 @@ The top row of the board is considered row zero and row numbers increase as they
 ------------------------------------------------------------------------------------------------ */
 
 const battleship = (board, row, col) => {
-  //  Solution code here...
+  // help from Skyler
+  for (var rows = 0 ; rows < board.length ; rows++) {
+    for (var columns = 0 ; columns < board[row].length ; columns++){
+      if (row === rows && col === columns){
+        if(board[rows][columns] === '#') return 'hit';
+        if(board[rows][columns] === ' ') return 'miss';
+      }
+    }
+  }
 }
+
+// const battleship = (board, row, col) => {
+//   //Loop through rows
+//   for(var r = 0; r < board.length; r++){
+//     //Loop to desired column
+//     for(var c = 0; c < board[row].length; c++){
+//       //Identify character in location
+//       if(row === r && col === c){
+//         //return hit or miss
+//         if(board[r][c] === '#') return 'hit';
+//         if(board[r][c] === ' ') return 'miss';
+//       }
+//     }
+//   }
+// }
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -210,13 +234,13 @@ describe('Testing challenge 2', () => {
 });
 
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return the number 24', () => {
     expect(howManyTreats(errands)).toStrictEqual(24);
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   const battleshipData = [
     ['#', ' ', '#', ' '],
     ['#', ' ', '#', ' '],
