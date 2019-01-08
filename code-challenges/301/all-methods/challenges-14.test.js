@@ -112,7 +112,32 @@ This data could be could be sorted by name or price.
 ------------------------------------------------------------------------------------------------ */
 
 const sortBy = (property, arr) => {
-  console.log (arr[0].property);
+  // for(var i in arr){
+  // console.log((arr[i].name).sort);
+  // }
+  // arr.name.sort(function(a,b){
+  //   return a - b;
+  // })
+  // console.log(arr);
+  // console.log(arr[0].name);
+
+  // const sortByPrice = (arr) => {
+  if(property === 'price'){ 
+    arr.sort(function(a,b){
+        if(a.price>b.price) return 1;
+        if(a.price<b.price) return -1;
+        return 0;
+      })
+      return arr;
+    }
+  if(property === 'name'){
+    arr.sort(function(a,b){
+      if(a.name>b.name) return 1;
+      if(a.name<b.name) return -1;
+      return 0;
+    })
+    return arr;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
