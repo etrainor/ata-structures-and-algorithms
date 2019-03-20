@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e718519-ec3d-45c9-8b62-bd3119a47815" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code-challenges/401/arrayShift/__test__/array-shift.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/code-challenges/401/arrayShift/__test__/array-shift.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +24,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="337" />
+          <entry key="JavaScript" value="339" />
           <entry key="Markdown" value="615" />
         </counts>
       </usages-collector>
@@ -69,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code-challenges/401/arrayShift/__test__/array-shift.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            <state relative-caret-position="300">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -105,7 +105,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="325">
@@ -131,8 +131,8 @@
         <option value="$PROJECT_DIR$/code-challenges/401/arrayReverse/array-reverse.js" />
         <option value="$PROJECT_DIR$/code-challenges/401/arrayShift/README.md" />
         <option value="$PROJECT_DIR$/code-challenges/401/arrayShift/array-shift.js" />
-        <option value="$PROJECT_DIR$/code-challenges/401/arrayShift/__test__/array-shift.test.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/code-challenges/401/arrayShift/__test__/array-shift.test.js" />
       </list>
     </option>
   </component>
@@ -256,12 +256,12 @@
       <option name="presentableId" value="Default" />
       <updated>1553048411846</updated>
       <workItem from="1553048413151" duration="6363000" />
-      <workItem from="1553109718832" duration="693000" />
+      <workItem from="1553109718832" duration="1079000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5204000" />
+    <option name="totallyTimeSpent" value="5590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="978" extended-state="0" />
@@ -342,17 +342,17 @@
     <entry file="file://$PROJECT_DIR$/code-challenges/401/linkedin-list-06/linked-list.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/code-challenges/401/arrayShift/__test__/array-shift.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code-challenges/401/arrayShift/__test__/array-shift.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
