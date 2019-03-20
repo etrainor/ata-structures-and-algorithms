@@ -9,7 +9,11 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "jest --coverage --verbose --testPathIgnorePatterns code-challenges/301/"
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
   },
   "author": "Erin Trainor and Skyler Burger",
   "license": "ISC"
