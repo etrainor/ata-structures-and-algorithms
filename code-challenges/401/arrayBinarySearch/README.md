@@ -8,7 +8,7 @@ Write a function that takes in a sorted array and a search key and returns the i
 We used binary search methods to loop through the array comparing the value of the index to the search value.
 
 ## Solution
-![Solution Image](../assets/array-binary-search.jpg)
+![Solution Image](../assets/array_binary_search.jpg)
 
 ## Pull Request
 https://github.com/etrainor/data-structures-and-algorithms/pull/40

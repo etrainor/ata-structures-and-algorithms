@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95c0e94e-3d67-4b3b-8066-51a1e4f11a5e" name="Default Changelist" comment="" />
+    <list default="true" id="95c0e94e-3d67-4b3b-8066-51a1e4f11a5e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/arrayBinarySearch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/arrayBinarySearch/README.md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
