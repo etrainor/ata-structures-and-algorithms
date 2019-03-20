@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d78bf0b-7ac4-44a0-8ca9-6977558bdecd" name="Default Changelist" comment="" />
+
+    <list default="true" id="95c0e94e-3d67-4b3b-8066-51a1e4f11a5e" name="Default Changelist" comment="" />
+
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -38,6 +40,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
+
     <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linkedin-list-06/linked-list.js">
@@ -193,6 +196,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+
     <option name="totallyTimeSpent" value="3834000" />
   </component>
   <component name="ToolWindowManager">
