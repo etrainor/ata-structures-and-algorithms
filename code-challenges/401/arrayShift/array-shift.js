@@ -24,3 +24,4 @@ insertShiftArray(evenArray, testValue);
 insertShiftArray(oddArray, testValue);
 insertShiftArray(empty, testValue);
 
+const shift = module.exports = {};
