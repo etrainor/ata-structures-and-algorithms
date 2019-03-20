@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "eslint": "^5.15.3",
     "jest": "^24.1.0"
   },
   "devDependencies": {},
