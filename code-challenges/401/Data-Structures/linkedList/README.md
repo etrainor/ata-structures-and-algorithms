@@ -1,7 +1,7 @@
 ## Code: Implement a Linked List
-[PR](stuff here)
+[Pull Request](https://github.com/etrainor/data-structures-and-algorithms/pull/43)
 
-[![Build Status](stuff here)]
+[![Build Status](https://www.travis-ci.com/etrainor/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/etrainor/data-structures-and-algorithms)
 
 # Singly Linked List
 Implement a Linked List using JavaScript classes.
