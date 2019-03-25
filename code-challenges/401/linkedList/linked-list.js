@@ -55,8 +55,11 @@ class LinkedList {
       let currentNode = this.head;
     
       // Return a boolean value depending on whether the value exists in the linked list.
-      while(currentNode) {
-        if(currentNode === value) return true;
+      while(currentNode !== null) {
+        if(currentNode.element === value) {
+          return true;
+        }
+        currentNode = currentNode.next;
       } 
     
       return false;
@@ -81,13 +84,14 @@ class LinkedList {
       let outputString = '';
 
       // Iterate through the nodes and add the values found to the outputString. Continue to reassign the next node as the current value.
-      while(currentNode) {
+      while(currentNode !== null) {
         outputString += currentNode.element + ' ';
         currentNode = currentNode.next;
       }
     
       // Console log the elements in the linked list
       console.log(outputString);
+      return outputString
 
       // Catch the errors and return something useful
     } catch (error) {
@@ -97,3 +101,5 @@ class LinkedList {
     }
   }
 } 
+
+module.exports = {Node, LinkedList};
