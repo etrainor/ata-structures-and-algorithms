@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e718519-ec3d-45c9-8b62-bd3119a47815" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/code-challenges/401/arrayBinarySearch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/code-challenges/401/arrayBinarySearch/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code-challenges/401/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/code-challenges/401/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -283,7 +284,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6054000" />
+    <option name="totallyTimeSpent" value="6650000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="978" extended-state="0" />
