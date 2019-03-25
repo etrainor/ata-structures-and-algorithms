@@ -91,7 +91,7 @@ class LinkedList {
     
       // Console log the elements in the linked list
       console.log(outputString);
-      return outputString
+      return outputString;
 
       // Catch the errors and return something useful
     } catch (error) {
