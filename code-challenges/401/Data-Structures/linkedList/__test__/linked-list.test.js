@@ -58,4 +58,62 @@ describe('LinkedList Class', () => {
       expect(outputString).toContain('dragon jackalope unicorn');
     });
   });
+  describe('append method', () => {
+    it('Can successfully add a node to the end of the linked list', () => {
+      const newList = new LinkedList();
+      newList.insert('unicorn');
+      newList.append('griffon');
+      const outputString = newList.print();
+      expect(outputString).toContain('unicorn griffon');
+    });
+    it('Can successfully add multiple nodes to the end of a linked list', () => {
+      const newList = new LinkedList();
+      newList.insert('unicorn');
+      newList.append('jackalope');
+      newList.append('dragon');
+      newList.append('griffon');
+      const outputString = newList.print();
+      expect(outputString).toContain('unicorn jackalope dragon griffon');
+    });
+  });
+  describe('insertBefore method', () => {
+    it('Can successfully insert a node before a node located in the middle of a linked list', () => {
+      const newList = new LinkedList();
+      newList.insert('unicorn');
+      newList.append('jackalope');
+      newList.insertBefore('jackalope', 'dragon');
+      const outputString = newList.print();
+      expect(outputString).toContain('unicorn dragon jackalope dragon');
+
+    });
+    it('Can successfully insert a node before the first node of a linked list', () => {
+      const newList = new LinkedList();
+      newList.insert('unicorn');
+      newList.append('jackalope');
+      newList.insertBefore('unicorn', 'dragon');
+      const outputString = newList.print();
+      expect(outputString).toContain('dragon unicorn jackalope');
+    });
+  });
+  describe('insertAfter method', () => {
+    it('Can successfully insert after a node in the middle of the linked list', () => {
+      const newList = new LinkedList();
+      newList.insert('unicorn');
+      newList.append('jackalope');
+      newList.append('dragon');
+      newList.insertAfter('jackalope', 'griffon');
+      const outputString = newList.print();
+      expect(outputString).toContain('unicorn jackalope griffon dragon');
+    });
+    it('Can successfully insert a node after the last node of the linked list', () => {
+      const newList = new LinkedList();
+      newList.insert('unicorn');
+      newList.append('jackalope');
+      newList.append('dragon');
+      newList.insertAfter('dragon', 'griffon');
+      const outputString = newList.print();
+      expect(outputString).toContain('unicorn jackalope dragon griffon');
+    });
+  });
 });
+
