@@ -28,7 +28,7 @@ describe('LinkedList Class', () => {
       newList.insert('jackalope');
       newList.insert('dragon');
       expect(newList.head.element).toContain('dragon');
-      expect(newList.head.next.element).toContain('jackalope')
+      expect(newList.head.next.element).toContain('jackalope');
       expect(newList.head.next.next.element).toContain('unicorn');
     });
   });
