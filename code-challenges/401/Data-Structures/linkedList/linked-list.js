@@ -159,9 +159,10 @@ class LinkedList {
     try {
 
       //Check if the linked list contains the old value using the includes method.
-      if(! new LinkedList.includes(oldValue)) {
+      if(LinkedList.includes(oldValue) === false) {
         return;
       }
+      console.log(LinkedList.includes(oldValue), 'this is what you are looking for');
 
       // Tell the function to start at the beginning(head) of the list.
       let currentNode = this.head.next;
@@ -203,7 +204,7 @@ class LinkedList {
     try {
 
       //Check if the linked list contains the old value using the includes method.
-      if(! new LinkedList.includes(oldValue)) {
+      if(! LinkedList.includes(oldValue)) {
         return;
       }
 
