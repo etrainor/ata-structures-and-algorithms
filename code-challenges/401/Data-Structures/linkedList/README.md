@@ -1,7 +1,7 @@
 ## Code: Implement a Linked List
 [Pull Request for `insert`, `includes`, and `print` methods](https://github.com/etrainor/data-structures-and-algorithms/pull/43)
 
-[Pull Request for `append`, `insertBefore`, and `insertAfter` methods](https://github.com/etrainor/data-structures-and-algorithms/pull/44)
+[Pull Request for `append`, `insertBefore`, and `insertAfter` methods](https://github.com/etrainor/data-structures-and-algorithms/pull/45)
 
 [![Build Status](https://www.travis-ci.com/etrainor/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/etrainor/data-structures-and-algorithms)
 
