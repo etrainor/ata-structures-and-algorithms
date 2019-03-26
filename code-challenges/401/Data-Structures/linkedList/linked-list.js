@@ -159,10 +159,10 @@ class LinkedList {
     try {
 
       //Check if the linked list contains the old value using the includes method.
-      if(LinkedList.includes(oldValue) === false) {
+      if(this.includes(oldValue) === false) {
         return;
       }
-      console.log(LinkedList.includes(oldValue), 'this is what you are looking for');
+      console.log(this.includes(oldValue), 'this is what you are looking for');
 
       // Tell the function to start at the beginning(head) of the list.
       let currentNode = this.head.next;
@@ -172,17 +172,18 @@ class LinkedList {
 
       // Check if the value of the first node in the linked list matches the value we are looking for. If so use the insert method to add a new node to the beginning of the linked list.
       if(this.head.element === oldValue) {
-        LinkedList.insert(newValue);
+        this.insert(newValue);
+  
       }
 
       // Iterate through the linked list and look for .next value that matches the oldValue(value being looked for). While iterating continue to reassign the previousNode value so when we find what we are looking for we know what node was previous 
-      while(currentNode !== oldValue){
+      while(currentNode.element !== oldValue){
         previousNode = currentNode;
         currentNode = currentNode.next;
       }
 
       // Once the oldValue is found, create a new Node between the previous node and the current node.
-      let newNode = new Node;
+      let newNode = new Node(newValue);
       previousNode.next = newNode;
       newNode.next = currentNode;
 
@@ -204,24 +205,24 @@ class LinkedList {
     try {
 
       //Check if the linked list contains the old value using the includes method.
-      if(! LinkedList.includes(oldValue)) {
+      if(! this.includes(oldValue)) {
         return;
       }
 
       // Check if the value of the first node in the linked list matches the value we are looking for. If so use the append method to add a new node to the beginning of the linked list.
       if(this.head.element === oldValue) {
-        LinkedList.append(newValue);
+        this.append(newValue);
       }
 
       let currentNode = this.head.next;
 
       // Iterate through the linked list and look for .next value that matches the oldValue(value being looked for).
-      while(currentNode !== oldValue){
+      while(currentNode.element !== oldValue){
         currentNode = currentNode.next;
       }
 
       // Once the oldValue is found, create a new Node after the current node and assign it the newValue..
-      let newNode = new Node;
+      let newNode = new Node(newValue);
       newNode.next = currentNode.next;
       currentNode.next = newNode;
 
