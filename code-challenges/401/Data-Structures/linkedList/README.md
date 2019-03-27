@@ -3,7 +3,7 @@
 
 [Pull Request for `append`, `insertBefore`, and `insertAfter` methods](https://github.com/etrainor/data-structures-and-algorithms/pull/45)
 
-[Pull Request for `findKfromEnd`](https://github.com/etrainor/data-structures-and-algorithms/pull/45)
+[Pull Request for `findKfromEnd`](https://github.com/etrainor/data-structures-and-algorithms/pull/46)
 
 [![Build Status](https://www.travis-ci.com/etrainor/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/etrainor/data-structures-and-algorithms)
 
