@@ -83,7 +83,7 @@ describe('LinkedList Class', () => {
       newList.append('jackalope');
       newList.insertBefore('jackalope', 'dragon');
       const outputString = newList.print();
-      expect(outputString).toContain('unicorn dragon jackalope dragon');
+      expect(outputString).toContain('unicorn dragon jackalope');
 
     });
     it('Can successfully insert a node before the first node of a linked list', () => {

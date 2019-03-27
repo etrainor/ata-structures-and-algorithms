@@ -1,7 +1,7 @@
 ## Code: Implement a Linked List
 [Pull Request for `insert`, `includes`, and `print` methods](https://github.com/etrainor/data-structures-and-algorithms/pull/43)
 
-[Pull Request for `append`, `insertBefore`, and `insertAfter` methods](https://github.com/etrainor/data-structures-and-algorithms/pull/44)
+[Pull Request for `append`, `insertBefore`, and `insertAfter` methods](https://github.com/etrainor/data-structures-and-algorithms/pull/45)
 
 [![Build Status](https://www.travis-ci.com/etrainor/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/etrainor/data-structures-and-algorithms)
 
@@ -35,13 +35,15 @@ Implement a Linked List using JavaScript classes.
 
   * The function stores the returned value as a string (I think this means it is making a copy??) so the space efficiency is O(n). It has a time efficiency of O(n).
 
-* The `insert` method
+* The `append` method takes in a value and inserts it as the value of a new node at the end of a linked list.
 
   * The function has a time efficiency of O(n) and a space efficiency of O(1).
-* The `insertBefore` method
+
+* The `insertBefore` method takes in a newValue and an oldValue and assigns the newValue to a new `Node` before the node that contains the oldValue.
 
   * The function has a time efficiency of O(n) and a space efficiency of O(1).
-* The `insertAfter` method
+
+* The `insertAfter` method takes in a newValue and an oldValue and assigns the newValue to a new `Node` after the node that contains the oldValue.
 
   * The function has a time efficiency of O(n) and a space efficiency of O(1).
 
@@ -56,9 +58,11 @@ Implement a Linked List using JavaScript classes.
 
   * The `print()` method returns a string with the with the `element` values of the linked list in the order they exist.
 
-  * The `.append(value)` method
-  * The `insertBefore(oldValue, newValue)` method
-  * The `insertAfter(oldValue, newValue)` method
+  * The `.append(value)` method takes a value argument and creates a new `Node` at the end of the linked list with the value as the node's element.
+
+  * The `insertBefore(oldValue, newValue)` method takes in an oldValue to seach for and a newValue. When the value of the current node matches the value being searched for a new node will be inserted before the current node.
+
+  * The `insertAfter(oldValue, newValue)` method method takes in an oldValue to seach for and a newValue. When the value of the current node matches the value being searched for a new node will be inserted after the current node.
 
 
   ## White Board Image for append(), insertBefore(), and insertAfter()
