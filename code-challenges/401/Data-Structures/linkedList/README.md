@@ -3,6 +3,8 @@
 
 [Pull Request for `append`, `insertBefore`, and `insertAfter` methods](https://github.com/etrainor/data-structures-and-algorithms/pull/45)
 
+[Pull Request for `findKfromEnd`](https://github.com/etrainor/data-structures-and-algorithms/pull/45)
+
 [![Build Status](https://www.travis-ci.com/etrainor/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/etrainor/data-structures-and-algorithms)
 
 # Singly Linked List
@@ -69,6 +71,9 @@ Implement a Linked List using JavaScript classes.
 
   ![Whiteboard Image #1](assets/ll-insertions-1.jpg)
   ![Whiteboard Image #2](assets/ll-insertions-2.jpg)
+  
+  ## White Board Image for findKfromEnd
+  ![WhiteBoard Image](assets/find-k.jpg)
 
   ## Partnerships
   Daniel Logerstedt was whiteboard partner for:
