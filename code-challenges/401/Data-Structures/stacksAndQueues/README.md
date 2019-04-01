@@ -1,7 +1,8 @@
 # Stacks and Queues
 Imlemene a Stand and a Queue Data Structure
 
-[Pull Request]()
+[Pull Request](https://github.com/etrainor/data-structures-and-algorithms/pull/48)
+[![Build Status](https://www.travis-ci.com/etrainor/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/etrainor/data-structures-and-algorithms)
 
 ## Challenge
 * Create a Node class that has properties for the value stored in the Node, and a pointer to the next node.
