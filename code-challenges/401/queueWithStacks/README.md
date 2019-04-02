@@ -1,6 +1,7 @@
 # Implement a Queue using two Stacks.
 Implement a Queue using two Stacks.
-
+[PR](https://github.com/etrainor/data-structures-and-algorithms/pull/51)
+[Travis][![Build Status](https://www.travis-ci.com/etrainor/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/etrainor/data-structures-and-algorithms)
 ## Challenge
 Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods:
 
