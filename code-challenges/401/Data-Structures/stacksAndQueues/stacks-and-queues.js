@@ -79,6 +79,7 @@ class Queue {
 
   constructor() {
     this.frontOfQueue = null;
+    this.backOfQueue = null;
   }
 
   // This method adds an element at the back of the queue like getting in line at a theater. It is a time performance of O(1) because it takes the same amount of time to complete the addition every time as only one value can be added each time.
@@ -89,14 +90,15 @@ class Queue {
       let newNode = new Node(value);
       //check if there is anything in the stack
       if(this.frontOfQueue !== null) {
-        //reassign the front of the queue as the next to the node being added
-        newNode.next = this.frontOfQueue;
-        //reassign the top of the stack to the new node
-        this.frontOfQueue = newNode;
+        //reassign the back of the queues next as the new node
+        this.backOfQueue.next = newNode;
+        //TODO need to ask why this.backOfQueue also gets assigned as a newNode.
+        this.backOfQueue = newNode;
 
       } else {
-        //assign the node being added as the top of the stack
+        //assign the node being added as both the front and back of the queue when the queue starts empty
         this.frontOfQueue = newNode;
+        this.backOfQueue = newNode;
 
       }
 
@@ -118,6 +120,8 @@ class Queue {
         //return the value of the node that was removed
         return removedNode; 
       }
+      //return null if the queue is empty since you can't dequeue nodes that are not there.
+      return null;
 
     } catch (error) {
       if(error.stack) {
