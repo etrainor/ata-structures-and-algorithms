@@ -12,8 +12,6 @@ class Stack {
 
   constructor() {
     this.top = null;
-    // this.items = [];
-    // this.length = 0;
   }
 
   // This method adds an element at the top of the stack. It is a time performance of O(1) because it takes the same amount of time to complete the addition every time as only one value can be added each time.

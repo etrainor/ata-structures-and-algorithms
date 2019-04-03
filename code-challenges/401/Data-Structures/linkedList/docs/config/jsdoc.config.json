@@ -1,9 +1,0 @@
-{
-  "source": {
-    "include": ["./linked-list.js"]
-  },
-  "opts": {
-    "destination": "./docs",
-    "recurse": true
-  }
-}
