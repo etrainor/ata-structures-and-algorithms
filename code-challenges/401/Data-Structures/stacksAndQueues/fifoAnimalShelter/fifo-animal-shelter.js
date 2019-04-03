@@ -30,9 +30,14 @@ let animalShelter = () => {
     //peek at front node
     let checkNode = queue1.peek();
 
+    if(preferredPet !== 'cat') {
+      return null;
+    }
+
     if(checkNode === preferredPet) {
       return checkNode;
     }
+
     console.log(queue1.dequeue()); //why does having this here make tempNode return a value below?
     while(queue1.frontOfQueue.next !== null) {
       if(queue1.frontOfQueue.element === preferredPet){
@@ -50,8 +55,9 @@ let animalShelter = () => {
       return tempNode.element;
     }
   };  
-  dequeueShelter('cat');
+  
+  dequeueShelter('giraffe');
 
 };
-
 animalShelter();
+console.log(animalShelter());
