@@ -69,11 +69,11 @@ Implement a Linked List using JavaScript classes.
 
   ## White Board Image for append(), insertBefore(), and insertAfter()
 
-  ![Whiteboard Image #1](assets/ll-insertions-1.jpg)
-  ![Whiteboard Image #2](assets/ll-insertions-2.jpg)
+  ![Whiteboard Image #1](../../assets/ll-insertions-1.jpg)
+  ![Whiteboard Image #2](../../assets/ll-insertions-2.jpg)
   
   ## White Board Image for findKfromEnd
-  ![WhiteBoard Image](assets/find-k.jpg)
+  ![WhiteBoard Image](../../assets/find-k.jpg)
 
   ## Partnerships
   Daniel Logerstedt was whiteboard partner for:
