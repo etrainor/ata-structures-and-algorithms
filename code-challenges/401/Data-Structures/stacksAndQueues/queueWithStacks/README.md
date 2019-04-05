@@ -17,4 +17,4 @@ Time = o(n) - because we have to touch each node 2 times
 Space = o(1) - because we are not copying the stack we are just moving nodes back and forth between stacks.
 
 ## Solution
-![Whiteboard image](../assets/queue_with_stacks.jpg)
+![Whiteboard image](../../../assets/queue_with_stacks.jpg)

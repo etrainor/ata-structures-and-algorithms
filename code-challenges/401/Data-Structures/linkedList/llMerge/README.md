@@ -10,4 +10,4 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 We decided to modify the linked lists in place rather than make a copy in order to improve the space/time efficiency.
 
 ## Solution
-![Whiteboard Image](../assets/ll_merge.jpg)
+![Whiteboard Image](../../../assets/ll_merge.jpg)
