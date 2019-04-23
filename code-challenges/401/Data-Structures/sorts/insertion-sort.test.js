@@ -1,10 +1,6 @@
-// A randomly generated unsorted array returns the array sorted
-// A sorted array returns the same sorted array
-// A backwards-sorted array returns the array sorted
-// An empty array returns the same empty array
-// An array of one element returns the same single-element array
-
 'use strict';
+
+const insertionSort = require('./insertion-sort.js');
 
 //Arrays to test with
 let randomArray = [76, 3, 54398, 22, -1, 0.38493, -43];
