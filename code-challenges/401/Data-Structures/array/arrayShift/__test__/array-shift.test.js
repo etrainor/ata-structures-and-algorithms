@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const shift = require("../array-shift.js");
 
@@ -12,3 +12,4 @@ xdescribe('Array-Shift Code Challenge', () => {
 
     })
 });
+

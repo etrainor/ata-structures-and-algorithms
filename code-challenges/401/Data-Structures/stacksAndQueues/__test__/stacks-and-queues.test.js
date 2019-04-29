@@ -2,7 +2,7 @@
 
 const {Stack, Queue} = require('../stacks-and-queues.js');
 
-describe('Stack Class', () => {
+xdescribe('Stack Class', () => {
   it('Can successfully instantiate an empty stack', () => {
     const newStack = new Stack();
     expect(newStack.top).toBeNull;
@@ -54,7 +54,7 @@ describe('Stack Class', () => {
   });
 });
 
-describe('Queue Class', () => {
+xdescribe('Queue Class', () => {
   it('Can successfully instantiate an empty queue', () => {
     const newQueue = new Queue();
     expect(newQueue.top).toBeNull;
