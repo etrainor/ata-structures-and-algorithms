@@ -1,6 +1,8 @@
 # Hashmap LEFT JOIN
 Left join two hash tables based on matching keys.
 
+[PR](https://github.com/etrainor/data-structures-and-algorithms/pull/64)
+
 ## Challenge
 * Write a function that LEFT JOINs two hashmaps into a single data structure.
 * The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
