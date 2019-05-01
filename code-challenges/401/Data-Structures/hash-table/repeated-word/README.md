@@ -2,6 +2,7 @@
 Find the first repeated word in a book.
 
 [PR](https://github.com/etrainor/data-structures-and-algorithms/pull/62)
+[![Build Status](https://www.travis-ci.com/etrainor/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/etrainor/data-structures-and-algorithms)
 
 ## Challenge
 * Write a function that accepts a lengthy string parameter.
