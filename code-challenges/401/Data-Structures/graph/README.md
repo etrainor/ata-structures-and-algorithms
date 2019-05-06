@@ -2,7 +2,8 @@
 Implement your own Graph.
 
 [Pull Request](https://github.com/etrainor/data-structures-and-algorithms/pull/65)
-[Travis]()
+
+[![Build Status](https://www.travis-ci.com/etrainor/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/etrainor/data-structures-and-algorithms)
 
 ## Challenge
 Implement a graph with the methods listed below under API.
