@@ -56,25 +56,45 @@ class Graph { //will give the size is graph.size is called.
       console.log(key, value);
     }
   }
+
+  getEdge(graph, array) {
+    let price;
+    if(!graph.adjacencyList[arr[0]){
+      return 'City is not present in the graph';
+    }
+    for( let i = 0 ; i < array.length-1 ; i++) {
+      if(graph.adjacencyList[i].value.includes[array[i+1]]){
+        price= price + graph.adjacencyList[i].weight.value;
+      } else {
+        return 'Unable to reach desired destination'
+      }
+      return `Congratulations! Your trip is possible. It will cost ${price} dollars.`
+    }
+  }
 }
 
 //make a graph
 const graph = new Graph();
-let color1 = graph.addVertex('red');
-let color2 = graph.addVertex('blue');
-let color3 = graph.addVertex('green');
-let color4 = graph.addVertex('purple');
-let color5 = graph.addVertex('yellow');
-let color6 = graph.addVertex('orange');
+let SEA = graph.addVertex('Seattle');
+let NYC = graph.addVertex('New York');
+let ORD = graph.addVertex('Chicago');
+let MIA = graph.addVertex('Miami');
 
-graph.addUndirectedEdge(color1,color6,10);
-graph.addUndirectedEdge(color2,color3,78);
-graph.addUndirectedEdge(color3,color4,43);
-graph.addUndirectedEdge(color4,color5,92);
-graph.addUndirectedEdge(color6,color1,8);
+let multiStopTrip = [SEA, ORD, NYC, MIA];
+
+graph.addUndirectedEdge(SEA,ORD,100);
+graph.addUndirectedEdge(ORD,NYC,300);
+graph.addUndirectedEdge(NYC,MIA,500);
+graph.addUndirectedEdge(SEA,MIA,900);
 
 graph.print();
 
-console.log(graph.getAllVertices());
+// console.log(graph.getAllVertices());
+// console.log(graph.getAllVertices()[0].value, 'what is this?');
+console.log(graph.adjacencyList, 'the list'); 
+
+// getEdge(graph, multiStopTrip);
 
 module.exports = { Graph, Edge, Vertex };
+
+
